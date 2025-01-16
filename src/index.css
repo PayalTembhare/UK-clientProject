@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: serif;
+}
+
+body {
+  background: rgb(18, 18, 18);
+  color: white;
+}
+
+/* .words-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(50px);
+}
+ */

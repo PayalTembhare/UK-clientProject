@@ -1,0 +1,70 @@
+/* Swiper container styles */
+.swiper {
+    width: 100%;
+    height:100%;
+}
+
+/* Swiper slide styles */
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    border-radius: 25px;
+}
+
+/* Active slide styling */
+.swiper-slide-active {
+    transform: scale(2);
+}
+
+/* Add a blur effect to the side images */
+.swiper-slide-prev,
+.swiper-slide-next {
+    filter: blur(3px) brightness(0.34)
+}
+
+/* Pagination styles */
+.swiper-pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Arrow buttons for navigation */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000;
+    font-size: 20px;
+}
+
+/* Swiper slide image styling */
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    /* Apply border-radius */
+}
+
+/* Ensure the swiper container is responsive */
+@media (max-width: 768px) {
+    .swiper-slide {
+        width: 200px;
+    }
+
+    .swiper-slide-active {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper-slide {
+        width: 150px;
+        height: 150px;
+    }
+
+    .swiper-slide-active {
+        transform: scale(1.05);
+    }
+}
